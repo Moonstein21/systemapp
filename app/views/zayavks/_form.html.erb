@@ -1,0 +1,52 @@
+<%= form_with(model: zayavk, local: true) do |form| %>
+  <% if zayavk.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(zayavk.errors.count, "error") %> prohibited this zayavk from being saved:</h2>
+
+      <ul>
+        <% zayavk.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :podr %>
+    <%= form.text_field :podr %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fio %>
+    <%= form.text_field :fio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telephone %>
+    <%= form.text_field :telephone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dolzh %>
+    <%= form.text_field :dolzh %>
+  </div>
+
+  <div class="field">
+    <%= form.label :servers %>
+    <%= form.text_field :servers %>
+  </div>
+
+  <div class="field">
+    <%= form.label :infosyst %>
+    <%= form.text_field :infosyst %>
+  </div>
+
+  <div class="field">
+    <%= form.label :soglos %>
+    <%= form.text_field :soglos %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

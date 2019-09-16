@@ -1,0 +1,2 @@
+class Zayavk < ApplicationRecord
+end
