@@ -28,7 +28,7 @@ class ZayavksController < ApplicationController
 
     respond_to do |format|
       if @zayavk.save
-        format.html { redirect_to @zayavk, notice: 'Zayavk was successfully created.' }
+        format.html { redirect_to @zayavk, notice: 'Заявка была успешно создана.' }
         format.json { render :show, status: :created, location: @zayavk }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ZayavksController < ApplicationController
   def update
     respond_to do |format|
       if @zayavk.update(zayavk_params)
-        format.html { redirect_to @zayavk, notice: 'Zayavk was successfully updated.' }
+        format.html { redirect_to @zayavk, notice: 'Заявка была успешно изменена.' }
         format.json { render :show, status: :ok, location: @zayavk }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ZayavksController < ApplicationController
   def destroy
     @zayavk.destroy
     respond_to do |format|
-      format.html { redirect_to zayavks_url, notice: 'Zayavk was successfully destroyed.' }
+      format.html { redirect_to zayavks_url, notice: 'Заявка была успешно удалена.' }
       format.json { head :no_content }
     end
   end

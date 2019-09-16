@@ -12,41 +12,41 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :podr %>
+    <%= form.label "Наименование подразделения" %>
     <%= form.text_field :podr %>
   </div>
 
   <div class="field">
-    <%= form.label :fio %>
+    <%= form.label "Фамилия, Имя, Отчество"%>
     <%= form.text_field :fio %>
   </div>
 
   <div class="field">
-    <%= form.label :telephone %>
+    <%= form.label "Телефон" %>
     <%= form.text_field :telephone %>
   </div>
 
   <div class="field">
-    <%= form.label :dolzh %>
+    <%= form.label "Занимаемая должность" %>
     <%= form.text_field :dolzh %>
   </div>
 
   <div class="field">
-    <%= form.label :servers %>
+    <%= form.label "Перечень базовый сервисов" %>
     <%= form.text_field :servers %>
   </div>
 
   <div class="field">
-    <%= form.label :infosyst %>
+    <%= form.label "Наименование информационных систем" %>
     <%= form.text_field :infosyst %>
   </div>
 
   <div class="field">
-    <%= form.label :soglos %>
+    <%= form.label "Список соглосований" %>
     <%= form.text_field :soglos %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Создание заявки" %>
   </div>
 <% end %>

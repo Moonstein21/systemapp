@@ -1,17 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Zayavks</h1>
+<h1>Заявка на доступ пользователя к информационным системам и сервисам</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Podr</th>
-      <th>Fio</th>
-      <th>Telephone</th>
-      <th>Dolzh</th>
-      <th>Servers</th>
-      <th>Infosyst</th>
-      <th>Soglos</th>
+      <th>ФИО</th>
+      <th>Подразделение</th>
+      <th>Должность</th>
+      <th>Телефон</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,16 +16,13 @@
   <tbody>
     <% @zayavks.each do |zayavk| %>
       <tr>
+        <td><%= zayavk.fio  %></td>
         <td><%= zayavk.podr %></td>
-        <td><%= zayavk.fio %></td>
-        <td><%= zayavk.telephone %></td>
         <td><%= zayavk.dolzh %></td>
-        <td><%= zayavk.servers %></td>
-        <td><%= zayavk.infosyst %></td>
-        <td><%= zayavk.soglos %></td>
-        <td><%= link_to 'Show', zayavk %></td>
-        <td><%= link_to 'Edit', edit_zayavk_path(zayavk) %></td>
-        <td><%= link_to 'Destroy', zayavk, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= zayavk.telephone %></td>
+        <td><%= link_to 'Посмотреть', zayavk %></td>
+        <td><%= link_to 'Редактировать', edit_zayavk_path(zayavk) %></td>
+        <td><%= link_to 'Удалить', zayavk, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Zayavk', new_zayavk_path %>
+<%= link_to 'Новая заявка', new_zayavk_path %>
