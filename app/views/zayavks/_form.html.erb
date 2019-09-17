@@ -11,32 +11,32 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label "Наименование подразделения" %>
-    <%= form.text_field :podr %>
+    <%= form.text_field :podr, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label "Фамилия, Имя, Отчество"%>
     <%= form.text_field :fio %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label "Телефон" %>
     <%= form.text_field :telephone %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label "Занимаемая должность" %>
     <%= form.text_field :dolzh %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label "Перечень базовый сервисов" %>
     <%= form.text_field :servers %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label "Наименование информационных систем" %>
     <%= form.text_field :infosyst %>
   </div>
