@@ -18,35 +18,35 @@
 
   <div class="form-group">
     <%= form.label "Фамилия, Имя, Отчество"%>
-    <%= form.text_field :fio %>
+    <%= form.text_field :fio, class: "form-control" %>
   </div>
 
   <div class="form-group">
     <%= form.label "Телефон" %>
-    <%= form.text_field :telephone %>
+    <%= form.text_field :telephone, class: "form-control" %>
   </div>
 
   <div class="form-group">
     <%= form.label "Занимаемая должность" %>
-    <%= form.text_field :dolzh %>
+    <%= form.text_field :dolzh, class: "form-control" %>
   </div>
 
   <div class="form-group">
     <%= form.label "Перечень базовый сервисов" %>
-    <%= form.text_field :servers %>
+    <%= form.text_field :servers, class: "form-control" %>
   </div>
 
   <div class="form-group">
     <%= form.label "Наименование информационных систем" %>
-    <%= form.text_field :infosyst %>
+    <%= form.text_field :infosyst, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label "Список соглосований" %>
-    <%= form.text_field :soglos %>
+    <%= form.text_field :soglos, class: "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit "Создание заявки" %>
+  <div class="form-group">
+    <%= form.submit "Создание заявки", class: "btn btn-primary mb-2" %>
   </div>
 <% end %>
